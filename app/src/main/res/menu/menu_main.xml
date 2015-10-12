@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item1"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="1"
+        android:title="M1" />
+    <item
+        android:id="@+id/menu_item2"
+        android:icon="@android:drawable/ic_input_delete"
+        android:orderInCategory="2"
+        android:title="M2">
+        <menu>
+            <item
+                android:id="@+id/sub_item1"
+                android:orderInCategory="1"
+                android:title="S1" />
+            <item
+                android:id="@+id/sub_item2"
+                android:orderInCategory="2"
+                android:title="S2" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_item3"
+        android:icon="@android:drawable/ic_input_get"
+        android:orderInCategory="3"
+        android:title="M3" />
+</menu>
