@@ -11,25 +11,28 @@
         app:actionViewClass="android.support.v7.widget.SearchView"/>
         <!--app:actionLayout="@layout/menu_layout"/>-->
 
-    <item
-        android:id="@+id/menu_item2"
-        android:icon="@android:drawable/ic_input_delete"
-        android:orderInCategory="2"
-        android:title="M2">
-        <menu>
-            <item
-                android:id="@+id/sub_item1"
-                android:orderInCategory="1"
-                android:title="S1" />
-            <item
-                android:id="@+id/sub_item2"
-                android:orderInCategory="2"
-                android:title="S2" />
-        </menu>
-    </item>
+    <!--  나머지 다 없애면 더보기 메뉴 사라짐 -->
+    <!--<item-->
+        <!--android:id="@+id/menu_item2"-->
+        <!--android:icon="@android:drawable/ic_input_delete"-->
+        <!--android:orderInCategory="2"-->
+        <!--android:title="M2">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/sub_item1"-->
+                <!--android:orderInCategory="1"-->
+                <!--android:title="S1" />-->
+            <!--<item-->
+                <!--android:id="@+id/sub_item2"-->
+                <!--android:orderInCategory="2"-->
+                <!--android:title="S2" />-->
+        <!--</menu>-->
+    <!--</item>-->
     <item
         android:id="@+id/menu_item3"
         android:icon="@android:drawable/ic_input_get"
         android:orderInCategory="3"
-        android:title="M3" />
+        android:title="M3"
+        app:showAsAction="always"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
 </menu>
